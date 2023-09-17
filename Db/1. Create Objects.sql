@@ -63,7 +63,7 @@ create procedure Sp_Insert_User(
     _pass NVARCHAR(255)
 )
 BEGIN
-	set @existUser = (select if(count(*)>0, 1, 0) from personas where email = _email);
+	set @existUser = (select if(count(*)>0, 1, 0) from Personas where Email = _email);
 	if @existUser = 0 then
 		INSERT INTO `my_cv`.`Personas`
 			(`Nombre`,
