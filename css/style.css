@@ -1,0 +1,137 @@
+body {
+    font-family: 'clicki';
+    border-style: solid;
+    font-style: normal;
+    padding: 2%;
+    min-width: 700px;
+    margin-left: 10%;
+    width: 70%;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.4em;
+}
+
+.CajaTexto {
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.Nombre {
+    font-size: 56px;
+    font-family: 'FuturaNowTextMedium';
+}
+
+.apellidos {
+    font-size: 70px;
+    font-family: 'FuturaNowTextMedium';
+}
+
+img {
+    margin: 3%;
+}
+
+@font-face {
+    font-family: clicki;
+    src: url('../fonts/FuturaNowText.ttf');
+}
+
+@font-face {
+    font-family: FuturaNowTextMedium;
+    src: url('../fonts/FuturaNowTextMedium.ttf');
+}
+
+@font-face {
+    font-family: FuturaNowTextExtraBold;
+    src: url('../fonts/FuturaNowTextExtraBold.ttf');
+}
+
+.CajaIzquierda {
+    width: 100%;
+}
+
+.CajaDerecha {
+    margin-left: 10%;
+    width: 100%;
+}
+
+p label {
+    margin-right: 12em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+table tr td {
+    width: 19%;
+}
+
+.linea {
+    background-color: black;
+}
+
+.main_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.CajUnitExp {
+    display: flex;
+    flex-direction: row;
+}
+
+.cajaTel {
+    display: flexbox;
+    flex-direction: column;
+    width: 30%;
+    font-size: 70%;
+}
+
+.CajaInfoEmpresa {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 70%;
+}
+
+.ParrafoInfoEmpresa {
+    flex-direction: column;
+    text-align: justify;
+    max-width: 500px;
+    width: 100%;
+    word-break: break-word;
+    font-size: 70%;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+.labelEmpresa {
+    width: 0%;
+    margin-right: 55%;
+    font-size: 80%;
+}
+
+.LabelCargoOcupado {
+    font-size: 80%;
+    margin-right: 70%;
+}.LabelTareasRelizadas{
+    font-size: 70%;
+}
+.ItemEducacion{
+    display: flex;
+    flex-flow: row;
+}
+.itemAtiempo{
+    width: 25%;
+    max-width: 200px;
+    font-size: 70%;
+}
+.itemEscuela{
+    width: 70%;
+
+}
