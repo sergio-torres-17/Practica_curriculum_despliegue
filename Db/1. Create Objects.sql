@@ -80,7 +80,7 @@ BEGIN
 			_Direccion,
 			_Descripcion);
             
-            set @usuarioid = (select PersonaId from personas WHERE Email = _Email);
+            set @usuarioid = (select PersonaId from Personas WHERE Email = _Email);
             INSERT INTO `Credenciales`
 			(`PersonaID`,
 			`NombreUsuario`,
