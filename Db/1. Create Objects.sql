@@ -5,7 +5,6 @@ CREATE TABLE Programas (
     NombrePrograma VARCHAR(255) NOT NULL,
     NivelDominio INT CHECK (NivelDominio >= 1 AND NivelDominio <= 5)
 );
-
 CREATE TABLE Personas (
     PersonaID INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(255) NOT NULL,
@@ -99,12 +98,12 @@ END;//
 CREATE VIEW Vw_Programs_people
 AS
 select concat(p.Nombre ,' ',p.Apellido) `People`, pr.NombrePrograma, pp.NivelDominio  from Programas pr
-LEFT JOIN ProgramasPersona pp ON pr.programaID = PP.programaid
-LEFT JOIN Personas p ON p.personaid = pp.personaid
+LEFT JOIN programaspersona pp ON pr.ProgramaID = PP.ProgramaID
+LEFT JOIN personas p ON p.PersonaID = pp.PersonaID
 //
 delimiter //
 CREATE VIEW Vw_Programas_experiencia
 AS
 select concat(p.Nombre ,' ',p.Apellido) `People`, el.Empresa, el.Puesto,el.FechaInicio,el.FechaFin, el.Descripcion  from ExperienciaLaboral el
-LEFT JOIN Personas p ON p.personaid = el.personaid
+LEFT JOIN Personas p ON p.PersonaID = el.PersonaID
 //
