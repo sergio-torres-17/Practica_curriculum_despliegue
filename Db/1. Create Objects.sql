@@ -65,7 +65,7 @@ create procedure Sp_Insert_User(
 BEGIN
 	set @existUser = (select if(count(*)>0, 1, 0) from Personas where Email = _email);
 	if @existUser = 0 then
-		INSERT INTO `my_cv`.`Personas`
+		INSERT INTO `Personas`
 			(`Nombre`,
 			`Apellido`,
 			`Email`,
@@ -81,7 +81,7 @@ BEGIN
 			_Descripcion);
             
             set @usuarioid = (select PersonaId from personas WHERE Email = _Email);
-            INSERT INTO `my_cv`.`Credenciales`
+            INSERT INTO `Credenciales`
 			(`PersonaID`,
 			`NombreUsuario`,
 			`Contraseña`)
