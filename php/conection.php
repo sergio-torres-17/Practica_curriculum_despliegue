@@ -6,7 +6,7 @@ class ConnectionDb{
         $hostname = 'localhost'; // Cambia esto al nombre de tu servidor MySQL
         $username = 'root'; // Cambia esto a tu nombre de usuario de MySQL
         $password = ''; // Cambia esto a tu contraseña de MySQL
-        $database = 'my_cv'; // Cambia esto al nombre de tu base de datos
+        $database = 'My_CV'; // Cambia esto al nombre de tu base de datos
         
         try {
             // Crea una instancia PDO
