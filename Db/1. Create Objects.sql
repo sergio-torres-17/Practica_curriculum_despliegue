@@ -98,13 +98,13 @@ END;//
 //
 CREATE VIEW Vw_Programs_people
 AS
-select concat(p.Nombre ,' ',p.Apellido) `People`, pr.NombrePrograma, pp.NivelDominio  from programas pr
-LEFT JOIN programaspersona pp ON pr.programaID = PP.programaid
-LEFT JOIN personas p ON p.personaid = pp.personaid
+select concat(p.Nombre ,' ',p.Apellido) `People`, pr.NombrePrograma, pp.NivelDominio  from Programas pr
+LEFT JOIN ProgramasPersona pp ON pr.programaID = PP.programaid
+LEFT JOIN Personas p ON p.personaid = pp.personaid
 //
 delimiter //
 CREATE VIEW Vw_Programas_experiencia
 AS
-select concat(p.Nombre ,' ',p.Apellido) `People`, el.Empresa, el.Puesto,el.FechaInicio,el.FechaFin, el.Descripcion  from experiencialaboral el
-LEFT JOIN personas p ON p.personaid = el.personaid
+select concat(p.Nombre ,' ',p.Apellido) `People`, el.Empresa, el.Puesto,el.FechaInicio,el.FechaFin, el.Descripcion  from ExperienciaLaboral el
+LEFT JOIN Personas p ON p.personaid = el.personaid
 //
