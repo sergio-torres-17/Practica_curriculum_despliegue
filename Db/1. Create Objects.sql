@@ -98,7 +98,7 @@ END;//
 CREATE VIEW Vw_Programs_people
 AS
 select concat(p.Nombre ,' ',p.Apellido) `People`, pr.NombrePrograma, pp.NivelDominio  from Programas pr
-LEFT JOIN ProgramasPersona pp ON pr.ProgramaID = PP.ProgramaID
+LEFT JOIN ProgramasPersona pp ON pr.ProgramaID = pp.ProgramaID
 LEFT JOIN Personas p ON p.PersonaID = pp.PersonaID
 //
 delimiter //
