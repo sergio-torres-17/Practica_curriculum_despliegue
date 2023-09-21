@@ -5,7 +5,7 @@ class ConnectionDb{
     public function getConnection(){
         $hostname = 'localhost'; // Cambia esto al nombre de tu servidor MySQL
         $username = 'root'; // Cambia esto a tu nombre de usuario de MySQL
-        $password = ''; // Cambia esto a tu contraseña de MySQL
+        $password = 'password'; // Cambia esto a tu contraseña de MySQL
         $database = 'My_CV'; // Cambia esto al nombre de tu base de datos
         
         try {
