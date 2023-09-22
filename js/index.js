@@ -31,7 +31,7 @@ function extractProgramSkills(jsonMaster){
 }
 window.onload = function () {
     var request = new XMLHttpRequest();
-    request.open('GET', 'http://192.168.0.217/despliegue/php/GetInfo.php');
+    request.open('GET', 'http://192.168.0.3/despliegue/php/GetInfo.php');
     request.send();
     request.onload = function () {
         jsonMasterParsed = JSON.parse(request.responseText);
